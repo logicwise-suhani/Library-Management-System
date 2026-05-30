@@ -8,6 +8,6 @@ function Button({ onClick, label }) {
         </>
     )
 
-};
+}; 
 
 export default Button;

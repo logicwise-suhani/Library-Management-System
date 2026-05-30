@@ -1,0 +1,187 @@
+.all-buttons button {
+  cursor: pointer;
+  background-color: darkcyan;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 7px;
+  font-family: Lucida Sans Unicode;
+  font-size: 16px;
+}
+
+.form {
+  margin: 200px 250px;
+  border: 2px solid darkcyan;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form form {
+  color: white;
+  font-family: Lucida Sans Unicode;
+  font-size: 25px;
+}
+
+.form input {
+  border-radius: 10px;
+  border: 2px solid white;
+  padding: 7px;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-family: Lucida Sans Unicode;
+  font-size: 16px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 225px;
+  right: 0;
+  height: 70px;
+  background-color: darkcyan;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  color: white;
+  font-family: "Lucida Sans Unicode";
+  font-size: 18px;
+  z-index: 1000;
+}
+
+.navbar h3 {
+  margin: 0;
+}
+
+/* .navbar .all-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .all-buttons button {
+  cursor: pointer;
+  background-color: white;
+  color: darkcyan;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-family: "Lucida Sans Unicode";
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.navbar .all-buttons button:hover {
+  background-color: rgb(0, 97, 97);
+  color: white;
+  transform: translateY(-2px);
+} */
+
+.side-panel {
+  height: 100vh;
+  background-color: darkcyan;
+  width: 225px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.side-panel h3 {
+  color: darkblue;
+  font-family: Lucida Sans Unicode;
+  font-size: 30px;
+}
+
+.side-panel-btns {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.side-panel-btns Button {
+  padding: 10px 50px;
+  border-bottom: 2px solid white;
+}
+
+.side-panel-btns Button:hover {
+  border-bottom: 2px solid rgb(0, 97, 97);
+  color: black;
+}
+
+.admin-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+
+.dialog-open-btn Button {
+  margin-right: 804px;
+}
+
+.dialog-form {
+  width: 400px;
+  padding: 24px;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  font-family: Lucida Sans Unicode;
+}
+
+.dialog-form::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+.dialog-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dialog-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+  box-sizing: border-box;
+  background-color: black;
+  font-family: Lucida Sans Unicode;
+}
+
+.dialog-form input:focus {
+  border-color: darkcyan;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+.close-mark {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.close-mark button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.view-users table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  border: 2px solid wheat;
+  color: white;
+}
+
+.action-btns {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}

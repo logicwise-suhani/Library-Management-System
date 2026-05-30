@@ -2,7 +2,7 @@ import { useState } from "react";
 import { login } from "../api/api";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
-import Navbar from "../components/Navbar";
+import { toast } from "react-toastify"; 
 
 function Login() {
 
@@ -20,10 +20,10 @@ function Login() {
             if (data.role === "ADMIN") {
                 navigate("/admin-dashboard");
             } else {
-                navigate("/student-dashboard");
+                navigate("/user-dashboard");
             }
         } catch (err) {
-            console.log(err);
+            toast.error(err);
         }
     }
 
@@ -34,7 +34,6 @@ function Login() {
     return (
         <>
             <div className="login">
-                <Navbar />
 
                 <div className="form">
                     <form onSubmit={handleSubmit}>
@@ -55,7 +54,7 @@ function Login() {
                             onChange={handleChange}
                         />
 
-                        <br />
+                        <br /> <br />
                         <Button type="submit" label="Login" />
                     </form>
                 </div>
